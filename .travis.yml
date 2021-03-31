@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "10"
+
+after_script:
+  - gitbook build
+  - cd ./_book
+  - git init
+  - git config user.name "heshuaichen"
+  - git config user.email "2507128607@qq.com"
+  - git add .
+  - git commit -m "publish gitbook"
+  - git push --force --quiet "https://af53595a0a522e25bb92735fceac8ed1d44aead9@github.com/heshuaichen/shuai-book" master:${BRANCH}
+
+branches:
+  only:
+    - master
+
