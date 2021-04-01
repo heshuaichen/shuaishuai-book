@@ -10,7 +10,7 @@ after_script:
   - git config user.email "2507128607@qq.com"
   - git add .
   - git commit -m "publish gitbook"
-  - git push --force --quiet "https://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@github.com/heshuaichen/shuaishuai-book" main:gh-pages
+  - git push --force --quiet "https://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@github.com/heshuaichen/shuaishuai-book" master:gh-pages
 
 branches:
   only:
